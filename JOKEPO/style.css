@@ -1,0 +1,183 @@
+@font-face {
+    font-family: 'luney';
+    src: url(ToonyLine_PERSONAL_USE_ONLY.otf);
+}
+@font-face {
+    font-family: 'mario';
+    src: url(SuperMario256.ttf);
+}
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+img {
+    width: 100%;
+    height: 400px;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(246, 231, 197);
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}
+
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.6;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#jogadorEscolha li a img {
+    width: 130px;
+    max-width: 200px;
+    transition: transform 0.2s ease-in-out;
+
+}
+
+#jogadorEscolha li a img:hover {
+    transform: scale(1.2);
+}
+
+#computadorEscolha li a img {
+    width: 130px;
+}
+
+#jogador {
+    background-color: rgba(0, 0, 0, 0.888);
+    width: 600px;
+    height: 380px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 8px rgb(134, 134, 134);
+    border-radius: 15px;
+}
+
+#computador {
+    background-color: rgba(0, 0, 0, 0.888);
+    width: 600px;
+    height: 380px;
+    box-shadow: 10px 10px 8px rgb(134, 134, 134);
+
+    border-radius: 10px;
+    margin-bottom: 70px;
+}
+
+#jogadorEscolha {
+    margin-top: 40px;
+    margin-left: 88px;
+
+}
+
+#computadorEscolha {
+    margin-top: 40px;
+    margin-left: 88px;
+
+}
+
+.jogadas {
+    float: left;
+    max-width: 33.33%;
+    height: auto;
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+#placar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 40px 50px;
+}
+
+#jogadorNome,
+#computadorNome {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font: 300 40px;
+    color: white;
+    font-family: 'mario';
+}
+
+#jogadornum {
+    margin-left: 275px;
+    background-color: rgb(112, 112, 112);
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+#jogadorPontos {
+    text-align: center;
+    font: 300 30px;
+    color: rgb(255, 0, 0);
+    padding: 15px;
+    font-family: 'mario';
+}
+
+#computadornum {
+    margin-left: 275px;
+    background-color: rgb(112, 112, 112);
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+#computadorPontos {
+    text-align: center;
+    font: 300 32px;
+    color: rgb(255, 0, 0);
+    padding: 15px;
+    font-family: 'mario';
+}
+
+#mensagem {
+    color: white;
+    margin-top: 25px;
+    font: 300 30px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 10px 10px 8px rgb(163, 163, 163);
+    font-family: 'mario';
+    text-align: center;
+}
+
+#caixa {
+    margin-left: 720px;
+    border-radius: 10px;
+    background-color: rgb(112, 112, 112);
+    width: 400px;
+    height: 50px;
+}
+
+#versus {
+    color: rgb(219, 0, 0);
+    font: 500 60px;
+    margin-top: 150px;
+    font-size: 50px;
+    font-family: 'mario';
+}
+h1{
+    font-size: 100px;
+    font-family: 'luney';
+    text-align: center;
+}
